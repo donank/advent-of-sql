@@ -5,9 +5,9 @@ SELECT
     wl.wishes->'colors' -> 0 AS favorite_color,
     JSON_ARRAY_LENGTH(wl.wishes->'colors') AS color_count,
     CASE
-        WHEN tc.difficulty_to_make = 1 THEN 'Complex Gift'
+        WHEN tc.difficulty_to_make = 1 THEN 'Simple Gift'
         WHEN tc.difficulty_to_make = 2 THEN 'Moderate Gift'
-        WHEN tc.difficulty_to_make >= 3 THEN 'Simple Gift'
+        WHEN tc.difficulty_to_make >= 3 THEN 'Complex Gift'
     END AS gift_complexity,
     CASE
         WHEN tc.category = 'outdoor' THEN 'Outside Workshop'
