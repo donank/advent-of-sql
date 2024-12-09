@@ -1,8 +1,8 @@
 SELECT 
     c.name,
-    wl.wishes->'first_choice' AS primary_wish,
-    wl.wishes->'second_choice' AS backup_wish,
-    wl.wishes->'colors' -> 0 AS favorite_color,
+    wl.wishes->>'first_choice' AS primary_wish,
+    wl.wishes->>'second_choice' AS backup_wish,
+    wl.wishes->'colors' ->> 0 AS favorite_color,
     JSON_ARRAY_LENGTH(wl.wishes->'colors') AS color_count,
     CASE
         WHEN tc.difficulty_to_make = 1 THEN 'Simple Gift'
