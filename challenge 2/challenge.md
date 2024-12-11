@@ -9,14 +9,14 @@ Valid characters
 - All lower case letters a - z
 - All upper case letters A - Z
 - Space
--!
--"
--'
--(
--)
--,
---
--.
--:
--;
--?
+- !
+- "
+- '
+- (
+- )
+- ,
+- \-
+- .
+- :
+- ;
+- ?
