@@ -18,9 +18,9 @@ Gift complexity can be mapped from the toy difficulty to make. Assume the follow
     Complex Gift >= 3
 We assign the workshop based on the primary wish's toy category. Assume the following:
 
-  outdoor = Outside Workshop
-  educational = Learning Workshop
-  all other types = General Workshop
+    outdoor = Outside Workshop
+    educational = Learning Workshop
+    all other types = General Workshop
 
 Order the list by name in ascending order.
 
